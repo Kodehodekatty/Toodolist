@@ -1,0 +1,137 @@
+@font-face {
+    font-family: todotext;
+    src: url("../fontsandimages/TimeburnerBold-peGR.ttf");
+}
+
+
+@font-face {
+    font-family: todobtn;
+    src: url("../fontsandimages/ZyzolRound-2OVmd.otf");
+}
+
+
+
+
+.input {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    width: 100%;
+    margin: 20px auto;
+
+    position: relative;
+
+
+
+
+
+}
+
+.input_field {
+    font-family: todotext;
+    width: 100%;
+    min-width: 60vw;
+    border-radius: 40px;
+    font-size: 1rem;
+    border: none;
+    padding: 20px 1rem;
+    background-color: rgb(253, 255, 250);
+    transition: 0.3s;
+    box-shadow: inset 0 0 3px black;
+    grid-column: 2/2;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+
+}
+
+.input_field:focus {
+
+    outline: none;
+    box-shadow: 0 0 8px 1000px rgba(1, 19, 75, 0.462);
+}
+
+
+
+.input_btn {
+    margin: 0;
+    font-family: todobtn;
+    position: relative;
+    width: min(70px);
+    height: 50px;
+    border-radius: 50px;
+    appearance: none;
+    grid-column: 3/3;
+    display: inline;
+    right: 3rem;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 126);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    cursor: pointer;
+
+}
+
+.input_btn:hover {
+    scale: 110%;
+}
+
+.input_btn:active {
+    transform: scale(0.8);
+    box-shadow: 0 0 3px white;
+}
+
+
+.todos {
+
+    display: flex;
+    border-radius: 30px;
+    flex-wrap: wrap;
+    padding: 5%;
+    width: 90%;
+    margin: 0;
+
+
+}
+
+
+.singletodos {
+
+    border-radius: 20px;
+    margin: 5px 0;
+    background-image: url(/src/fontsandimages/note-154962__340.webp);
+    height: min(200px);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: grid;
+    grid-template-rows: 10px 50% 20px;
+    grid-template-columns: min(280px) 1fr;
+    align-content: center;
+    word-break: break-word;
+    justify-items: center;
+    align-items: center;
+    font-family: todotext;
+}
+
+.icon {
+    margin-left: 10px;
+
+    cursor: pointer;
+    padding: 5px;
+}
+
+.icon:active {
+    scale: 130%;
+}
+
+
+
+.todotext {
+    border: none;
+    font-size: 1rem;
+    margin: 0 auto;
+    grid-row: 2/2;
+    grid-column: 1/1;
+    max-width: 12rem;
+    text-align: center;
+    cursor: text;
+}
