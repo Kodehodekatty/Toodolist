@@ -1,5 +1,5 @@
-# Toodolist
-Typescript/React/vite toodoolist 
+<p align="center"># Toodolist
+**Typescript/React/vite toodoolist**</p>
 
 <p align="center">
 Toodolist made with Typescript and React/Vite :)</p>
